@@ -24,7 +24,7 @@ body {
     align-content: center;
     max-width: 800px;
     margin: auto;
-    row-gap: 20px;
+    row-gap: 50px;
     grid-template-rows: repeat(7, auto);
     grid-template-columns: repeat(6, auto);
     grid-template-areas:
