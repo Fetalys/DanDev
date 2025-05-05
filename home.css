@@ -202,22 +202,22 @@ header li {
 
 /*Image Animation*/
 .img1:hover {
-    transform: scale(2) rotate(20deg);
+    transform: scale(2) rotate(20deg) translateX(55px);
     z-index: 1;
 }
 
 .img2:hover {
-    transform: scale(2) rotate(-20deg);
+    transform: scale(2) rotate(-20deg) translateX(40px);
     z-index: 2;
 }
 
 .img3:hover {
-    transform: scale(2) rotate(20deg);
+    transform: scale(2) rotate(20deg) translateX(-40px);
     z-index: 3;
 }
 
 .img4:hover {
-    transform: scale(2) rotate(-20deg);
+    transform: scale(2) rotate(-20deg) translateX(-55px);
     z-index: 4;
 }
 
