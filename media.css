@@ -23,7 +23,7 @@
         max-width: 600px;
         min-width: fit-content;
         margin: auto;
-        row-gap: 20px;
+        row-gap: 50px;
         grid-template-rows: repeat(1, auto);
         grid-template-columns: repeat(1, auto);
         grid-template-areas:
