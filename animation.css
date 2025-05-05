@@ -1,0 +1,17 @@
+/* Animation for elements appearing on scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Glowing effect for social icons */
+.social-icons.glow {
+    box-shadow: 0 0 10px #d79921, 0 0 20px #d79921, 0 0 30px #d79921;
+    transition: box-shadow 3s ease-in-out;
+}

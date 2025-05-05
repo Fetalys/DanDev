@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #262424;
+    color: #eee5da;
+}
+
+/*Grid Container*/
+.container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    max-width: 800px;
+    margin: auto;
+    row-gap: 20px;
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: repeat(6, auto);
+    grid-template-areas:
+        "header     header      header      header      header      header"
+        "main       main      main         main        main       main"
+        "spotify    spotify     spotify      spotify       spotify        spotify"
+        "image    image     image      image       image        image"
+        "about    about     about      about       about        about"
+        "footer     footer      footer       footer        footer         footer";
+}
+
+/*Grid Names*/
+header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.spotify {
+    grid-area: spotify;
+}
+
+.img-container {
+    grid-area: image;
+}
+
+#about {
+    grid-area: about;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/*Header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 10vh;
+    height: 10vh;
+    cursor: pointer;
+}
+
+header ul {
+    margin-bottom: 10%;
+    margin-left: -60%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    list-style: none;
+    gap: 15%;
+}
+
+header li {
+    cursor: pointer;
+}
+
+
+/*Nav Links*/
+.home a {
+    color: #eee5da;
+}
+
+.home a:hover {
+    color: #d79921;
+    transition: .3s ease-in-out;
+}
+
+.about a {
+    color: #eee5da;
+}
+
+.about a:hover {
+    color: #d79921;
+    transition: .3s ease-in-out;
+}
+
+.contact a {
+    color: #eee5da;
+}
+
+.contact a:hover {
+    color: #d79921;
+    transition: .3s ease-in-out;
+}
+
+
+
+/*Main*/
+.main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    color: #eee5da;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.main span {
+    color: #d79921;
+    border-right: 5px solid orange;
+    animation: blink-caret .75s step-end infinite;
+}
+.main p {
+    text-align: center;
+}
+
+/*Spotify*/
+.spotify {
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    gap: 5px;
+    padding-top: 30px;
+}
+
+/*Top Songs*/
+.top-s {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/*Image Container*/
+.img-container {
+    display: flex;
+    justify-self: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 800px;
+}
+
+.img-container img {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 20px;
+}
+
+.img1 {
+    rotate: -20deg;
+    transition: transform .2s;
+}
+
+.img2 {
+    rotate: 20deg;
+    transition: transform .2s;
+}
+
+.img3 {
+    rotate: -20deg;
+    transition: transform .2s;
+}
+
+.img4 {
+    rotate: 20deg;
+    transition: transform .2s;
+}
+
+/*Image Animation*/
+.img1:hover {
+    transform: scale(2) rotate(20deg);
+    z-index: 1;
+}
+
+.img2:hover {
+    transform: scale(2) rotate(-20deg);
+    z-index: 2;
+}
+
+.img3:hover {
+    transform: scale(2) rotate(20deg);
+    z-index: 3;
+}
+
+.img4:hover {
+    transform: scale(2) rotate(-20deg);
+    z-index: 4;
+}
+
+/*About*/
+#about {
+    padding-top: 30px;
+    max-width: 800px;
+    text-align: center;
+}
+
+#about h2 {
+    text-align: center;
+}
+#about p {
+    transition: transform .3s;
+}
+#about p:hover {
+    transform: scale(1.2);
+    color: #d79921;
+}
+/*Projects*/
+.projects {
+    padding-top: 30px;
+    max-width: 800px;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.proj h3 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.proj h4 {
+    font-style: italic;
+}
+.proj {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform .3s;
+}
+.proj:hover {
+    transform: scale(1.1);
+    color: #d79921;
+}
+
+/*Education*/
+.education {
+    padding-top: 30px;
+    max-width: 800px;
+}
+
+.education h2 {
+    color: #eee5da;
+    text-align: center;
+}
+
+.education h3 {
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.education p {
+    font-size: 15px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 800px;
+}
+.plsp {
+    transition: transform .3s;
+    cursor: default;
+}
+
+.stms {
+    transition: transform .3s;
+    cursor: default;
+}
+
+.lc {
+    transition: transform .3s;
+    cursor: default;
+}
+
+.spcs {
+    transition: transform .3s;
+    cursor: default;
+}
+.plsp:hover {
+    transform: scale(1.1);
+    color: #d79921;
+}
+
+.stms:hover {
+    transform: scale(1.1);
+    color: #d79921;
+}
+
+.lc:hover {
+    transform: scale(1.1);
+    color: #d79921;
+}
+
+.spcs:hover {
+    transform: scale(1.1);
+    color: #d79921;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    padding: 15px 0;
+    color: #eee5da;
+    width: 100%;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #eee5da;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #d79921;
+    transition: .3s ease-in-out;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/*Animation*/
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
